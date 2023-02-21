@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sso-spike.sts", "sso-spike.sts\sso-spike.sts.csproj", "{744E091B-8D9B-441B-902E-92C6CFF66675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sso-spike.api.client", "sso-spike.api.client\sso-spike.api.client.csproj", "{A7B12D60-26A2-472C-8244-7CFFD424C2D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{744E091B-8D9B-441B-902E-92C6CFF66675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744E091B-8D9B-441B-902E-92C6CFF66675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744E091B-8D9B-441B-902E-92C6CFF66675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744E091B-8D9B-441B-902E-92C6CFF66675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B12D60-26A2-472C-8244-7CFFD424C2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B12D60-26A2-472C-8244-7CFFD424C2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B12D60-26A2-472C-8244-7CFFD424C2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B12D60-26A2-472C-8244-7CFFD424C2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
