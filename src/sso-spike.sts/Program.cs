@@ -5,7 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddAdapters(builder.Configuration, builder.Environment.IsDevelopment());
+var isDevelopment = builder.Environment.IsDevelopment();
+Console.WriteLine("isDevelopment: " + isDevelopment);
+builder.Services.AddAdapters(builder.Configuration, isDevelopment);
 
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 

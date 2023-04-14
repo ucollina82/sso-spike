@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 var ssoOptions = new SsoOptions();
 builder.Configuration.GetSection("SSO").Bind(ssoOptions);
 builder.Services.AddAuthentication("Bearer")
@@ -40,9 +41,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors(options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+
 app.UseHttpsRedirection();
 
+app.UseCors(x => x.AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowAnyOrigin()
+    .WithExposedHeaders("Content-Disposition"));
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

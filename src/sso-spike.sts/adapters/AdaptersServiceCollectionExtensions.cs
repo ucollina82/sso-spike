@@ -24,9 +24,7 @@ public static class AdaptersServiceCollectionExtensions
         
         services.AddRefit(configuration, localSetup)
             .AddIdentityServer(configuration, localSetup, isDevelopment);
-        
-        
-        
+
         return services;
     }
 
